@@ -1,10 +1,27 @@
 import { NavLink } from "react-router-dom"
-
+import logo from "../../assets/logo.png"
+import { useState } from "react"
+import MegaMenu from "../MegaMenu/MegaMenu"
+import MenuButton from "./MenuButton"
+import MobileMenu from "./MobileMenu/MobileMenu"
 
 function Header() {
+    const [activeMenu, setActiveMenu] = useState<string | null>(null)
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
+    const handleMenuClick = (menuName: string) => {
+        setActiveMenu(
+            activeMenu === menuName ? null : menuName
+        )
+    }
 
+    const handleHamburger = () => {
+        setIsMenuOpen(prev => !prev)
+    }
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
 
     return (
         <>
@@ -16,27 +33,31 @@ function Header() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                             fill="currentColor" viewBox="0 0 24 24"
                             className="min-[600px]:block lg:hidden md:hidden cursor-pointer"
-                        >
+                            onClick={handleHamburger}>
                             <path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path>
                         </svg>
 
                         <div className="flex items-center gap-3">
-                            
-                            <h2 className="font-bold text-2xl relative">GoDaddy <sub className="font-normal text-sm left-12 top-6 absolute">Bangladesh</sub></h2>
+                            <img className="w-15" src={logo} alt="" />
+                            <h2 className="font-bold text-2xl relative">DomainBD <sub className="font-normal text-sm left-12 top-6 absolute">Bangladesh</sub></h2>
                         </div>
 
                         <div className="hidden lg:flex items-center gap-4 font-medium text-base">
 
                             <div>
-
-                                <NavLink to='/domains'>Domains</NavLink>
-
+                                <MenuButton
+                                    name="Domains"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
                             </div>
 
                             <div>
-
-                                <NavLink to='/websites'>Websites</NavLink>
-
+                                <MenuButton
+                                    name="Websites"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
                             </div>
 
                             <div>
@@ -44,21 +65,27 @@ function Header() {
                             </div>
 
                             <div>
-
-                                <NavLink to='/hosting'>Hosting</NavLink>
-
+                                <MenuButton
+                                    name="Hosting"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
                             </div>
 
                             <div>
-
-                                <NavLink to='/marketing'>Marketing</NavLink>
-
+                                <MenuButton
+                                    name="Marketing"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
                             </div>
 
                             <div>
-
-                                <NavLink to='/security'>Security</NavLink>
-
+                                <MenuButton
+                                    name="Security"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
                             </div>
 
                             <div>
@@ -83,6 +110,11 @@ function Header() {
                     </div>
                 </div>
 
+                <MegaMenu activeMenu={activeMenu} />
+                <MobileMenu
+                    isMenuOpen={isMenuOpen}
+                    closeMenu={closeMenu}
+                />
             </div>
         </>
     )
