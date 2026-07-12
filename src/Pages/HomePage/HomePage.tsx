@@ -1,5 +1,6 @@
 
 import Header from "../../Components/Header/Header"
+import HeroSection from "../../Components/HeroSection.tsx/HeroSection"
 
 
 function HomePage() {
@@ -8,7 +9,8 @@ function HomePage() {
             <div>
                 <Header />
 
-                
+                <HeroSection />
+
             </div>
         </>
     )
