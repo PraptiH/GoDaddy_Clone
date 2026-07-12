@@ -1,4 +1,4 @@
-
+import FeaturedProducts from "../../Components/FeaturedProducts/RatingBar"
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection.tsx/HeroSection"
 
@@ -10,6 +10,8 @@ function HomePage() {
                 <Header />
 
                 <HeroSection />
+
+                <FeaturedProducts/>
 
             </div>
         </>

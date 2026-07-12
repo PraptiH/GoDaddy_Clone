@@ -28,7 +28,7 @@ function Header() {
             <div>
                 <div className="bg-black text-white flex items-center justify-between lg:justify-around gap-5 py-5 px-8">
 
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-center gap-2 lg:gap-5">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                             fill="currentColor" viewBox="0 0 24 24"
@@ -109,7 +109,7 @@ function Header() {
                         </svg>
                     </div>
 
-                    <div className="flex items-center gap-3 text-base lg:hidden">
+                    <div className="flex items-center gap-3 lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" viewBox="0 0 24 24"
                             transform="scale(-1,1) ">
