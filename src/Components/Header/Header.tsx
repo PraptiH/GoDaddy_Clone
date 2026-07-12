@@ -98,7 +98,7 @@ function Header() {
                         </div>
                     </div>
 
-                    <div className="hidden min-[600px]:flex items-center gap-3 text-base">
+                    <div className="hidden lg:flex items-center gap-3 text-base">
                         <NavLink to="/deals">Deals</NavLink>
                         <NavLink to="/contact">Contact Us</NavLink>
                         <NavLink to="/help">Help</NavLink>
