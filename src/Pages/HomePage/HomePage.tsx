@@ -1,4 +1,4 @@
-import FeaturedProducts from "../../Components/FeaturedProducts/RatingBar"
+import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts"
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection.tsx/HeroSection"
 
