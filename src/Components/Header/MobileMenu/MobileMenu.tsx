@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import MenuButton from "../MenuButton";
 import SubMenu from "./SubMenu";
-import logo from "../../../assets/logo-black.png"
+import logo from "../../../assets/GODADDY_AIRO_LOGO_WHITE.svg"
 
 type Props = {
     isMenuOpen: boolean;

@@ -1,4 +1,5 @@
 @import "tailwindcss";
  body{
     overflow-y: auto;
+    font-family: "GD Sherpa Regular";
  }

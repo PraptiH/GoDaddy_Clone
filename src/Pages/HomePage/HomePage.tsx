@@ -1,6 +1,7 @@
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts"
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection.tsx/HeroSection"
+import WebsiteMarketing from "../../Components/WebsiteMarketing/WebsiteMarketing"
 
 
 function HomePage() {
@@ -12,6 +13,8 @@ function HomePage() {
                 <HeroSection />
 
                 <FeaturedProducts/>
+
+                <WebsiteMarketing/>
 
             </div>
         </>

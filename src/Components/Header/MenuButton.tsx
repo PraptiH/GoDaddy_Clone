@@ -9,6 +9,7 @@ function MenuButton({ name, activeMenu, clickMenu }: Props) {
     return (
         <div onClick={()=>{clickMenu(name)}}
         className={`flex items-center cursor-pointer p-2 rounded-lg
+            text-[15px] hover:bg-[#454545b4]
             ${isActive? "bg-white text-black" : ""}`}
         >
             <p>{name}</p>

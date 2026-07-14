@@ -1,4 +1,4 @@
-import logoBlack from '../../assets/logo-black.png'
+import logoBlack from '../../assets/logo.png'
 
 type Mobile = {
     mobile?:boolean

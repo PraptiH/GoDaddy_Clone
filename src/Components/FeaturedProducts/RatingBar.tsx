@@ -5,7 +5,7 @@ function RatingBar() {
         <>
             <div className="flex items-center justify-center gap-3 lg:gap-5 overflow-hidden">
                 <div className='flex items-center gap-2'>
-                    <p className="font-medium text-xs hidden lg:block">Our customers say </p>
+                    <p className="text-sm hidden lg:block">Our customers say </p>
                     <p className="font-semibold text-lg">Excellent</p>
                 </div>
 
