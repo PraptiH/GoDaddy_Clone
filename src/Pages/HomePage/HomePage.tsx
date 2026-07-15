@@ -1,3 +1,4 @@
+import AiroSection from "../../Components/AiroSection/AiroSection"
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts"
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection.tsx/HeroSection"
@@ -18,6 +19,8 @@ function HomePage() {
                 <WebsiteMarketing/>
 
                 <TemplateSection/>
+
+                <AiroSection/>
 
             </div>
         </>

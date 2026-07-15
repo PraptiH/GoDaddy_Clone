@@ -25,7 +25,7 @@ function TemplateSection() {
                 </div>
 
                 <div className="overflow-hidden pt-15 pb-10">
-                    <div className={`imgMarquee flex w-max gap-15 
+                    <div className={`imgMarquee flex w-max gap-12 
                         ${isPaused ? "paused" : ''
                         }`}>
                         {duplicateImgArr.map((img, index) => (
@@ -68,19 +68,19 @@ function TemplateSection() {
                 </button>
 
                 <div className='flex justify-end pr-15 -translate-y-6'>
-                    <button className='rounded-full bg-gray-600 hover:bg-black p-1' onClick={replayPauseBtn}>
+                    <button className='rounded-full bg-gray-600 hover:bg-black p-2 cursor-pointer' onClick={replayPauseBtn}>
                         {
                             isPaused ? (
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                <svg xmlns="http://www.w3.org/2000/svg" 
                                     fill="currentColor" viewBox="0 0 24 24"
-                                    className='text-white'>
+                                    className='text-white w-3'>
                                     <path d="M8 6.65v10.69c0 .64.76.99 1.24.56l6.11-5.35c.34-.3.34-.83 0-1.13L9.24 6.07C8.76 5.65 8 5.99 8 6.63Z"></path>
                                 </svg>
 
                             ) : (
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                <svg xmlns="http://www.w3.org/2000/svg" 
                                     fill="currentColor" viewBox="0 0 24 24"
-                                    className='text-white'>
+                                    className='text-white w-3'>
                                     <path d="M6 18h4c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1M7 8h2v8H7zm7-2c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1zm3 10h-2V8h2z"></path>
                                 </svg>
                             )
