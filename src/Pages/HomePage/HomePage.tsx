@@ -1,5 +1,6 @@
 import AiroSection from "../../Components/AiroSection/AiroSection"
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts"
+import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection.tsx/HeroSection"
 import TemplateSection from "../../Components/TemplateSection/TemplateSection"
@@ -24,6 +25,8 @@ function HomePage() {
                 <AiroSection/>
 
                 <WhyWork/>
+
+                <Footer/>
 
             </div>
         </>

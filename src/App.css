@@ -29,6 +29,10 @@
    animation: marquee 100s linear infinite;
  }
 
- .imgMarquee:hover, .paused{
+ .textMarquee{
+   animation: marquee 10s linear infinite ;
+ }
+
+ .imgMarquee:hover, .textMarquee:hover, .paused{
    animation-play-state: paused;
  }
