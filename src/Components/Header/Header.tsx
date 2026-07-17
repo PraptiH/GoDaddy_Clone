@@ -27,7 +27,7 @@ function Header() {
     return (
         <>
             <div>
-                <div className="bg-[#0c0c0cde] text-white flex items-center justify-between gap-5 py-5 px-5 lg:px-15">
+                <div className="bg-[#0c0c0cde] text-white flex items-center justify-between gap-5 py-3 px-5 lg:px-15">
 
                     <div className="flex items-center gap-2 lg:gap-5">
 
@@ -39,7 +39,7 @@ function Header() {
                         </svg>
 
                         <div className="flex items-center gap-3">
-                            <img className="hidden md:block lg:block w-40" src={logo} alt="" />
+                            <img className="hidden md:block lg:block w-35" src={logo} alt="" />
                             <img className="block md:hidden lg:hidden w-8" src={mobileLogo} alt="" />
                         </div>
 
