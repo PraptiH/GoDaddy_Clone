@@ -1,38 +1,113 @@
 @import "tailwindcss";
- body{
-    overflow-y: auto;
- }
 
- @font-face{
-    font-family: "GD Sherpa Regular";
-    src: url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.eot");
-    src: url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.svg#GD Sherpa Regular")format("svg");
-    font-weight:normal;
-    font-style:normal;
-    font-display:swap;
+body {
+  overflow-y: auto;
 }
 
- @keyframes marquee{
-   from{
-      transform: translateX(0);
-   }
-   to{
-      transform: translateX(-50%);
-   }
- }
+@font-face {
+  font-family: "GD Sherpa Regular";
+  src: url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.eot");
+  src: url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.svg#GD Sherpa Regular")format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
- .imgMarquee{
-   animation: marquee 100s linear infinite;
- }
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
 
- .textMarquee{
-   animation: marquee 10s linear infinite ;
- }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
- .imgMarquee:hover, .textMarquee:hover, .paused{
-   animation-play-state: paused;
- }
+.imgMarquee {
+  animation: marquee 100s linear infinite;
+}
+
+.textMarquee {
+  animation: marquee 10s linear infinite;
+}
+
+.imgMarquee:hover,
+.textMarquee:hover,
+.paused {
+  animation-play-state: paused;
+}
+
+.contact {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 180px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform .25s;
+}
+
+.contact:hover {
+  transform: translateY(-4px);
+}
+
+.border-layer {
+  position: absolute;
+  inset: 0;
+  background: #744bc4;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  inset: 2px;
+  background: white;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 700;
+  z-index: 3;
+}
+
+.shine {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, .95), rgba(255, 255, 255, .6), transparent 90%);
+  filter: blur(6px);
+  opacity: 0;
+  offset-path: path("M30 2 H160 A28 28 0 0 1 188 30 A28 28 0 0 1 160 58 H30 A28 28 0 0 1 2 30 A28 28 0 0 1 30 2");
+  offset-distance: 0%;
+}
+
+.contact:hover .shine {
+  opacity: 1;
+  animation: borderTravel .9s ease forwards;
+}
+
+@keyframes borderTravel {
+
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+
+}

@@ -1,4 +1,5 @@
 import AiroSection from "../../Components/AiroSection/AiroSection"
+import Contact from "../../Components/Contact/Contact"
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts"
 import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
@@ -16,17 +17,19 @@ function HomePage() {
 
                 <HeroSection />
 
-                <FeaturedProducts/>
+                <FeaturedProducts />
 
-                <WebsiteMarketing/>
+                <WebsiteMarketing />
 
-                <TemplateSection/>
+                <TemplateSection />
 
-                <AiroSection/>
+                <AiroSection />
 
-                <WhyWork/>
+                <WhyWork />
 
-                <Footer/>
+                <Footer />
+
+                <Contact />
 
             </div>
         </>
