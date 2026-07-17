@@ -5,10 +5,11 @@ import healthAlterative from '../../assets/kohealthalternativetemplate_desktop.w
 import homeHouse from '../../assets/kohomehousewarestemplate_desktop.webp'
 import furniture from '../../assets/koretailfurniturebttemplate_desktop.webp'
 import singleProduct from '../../assets/retailsingleproduct_mobile.webp'
+import musicTemplate from '../../assets/komusicmusicianbttemplate_desktop.webp'
 
 function TemplateSection() {
 
-    const imgArr: string[] = [singleProduct, healthAlterative, bookStore, furniture, artGallery, homeHouse]
+    const imgArr: string[] = [musicTemplate, singleProduct, healthAlterative, bookStore, furniture, artGallery, homeHouse]
     const duplicateImgArr: string[] = [...imgArr, ...imgArr]
     const [isPaused, setIsPaused] = useState(false)
 
@@ -18,7 +19,7 @@ function TemplateSection() {
 
     return (
         <>
-            <div className="bg-slate-100 pt-20 pb-10 my-10">
+            <div className="bg-slate-100 pt-20 pb-10 my-15">
                 <div className="text-center space-y-6">
                     <h1 className="font-bold text-5xl tracking-wide">Templates designed to sell</h1>
                     <p className="text-lg">Choose from 100s of designs for every idea and industry.</p>

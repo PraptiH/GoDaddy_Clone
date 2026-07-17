@@ -13,8 +13,8 @@ function ProductGrid() {
                 <div className='relative h-120 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-300'>
                     <img className='rounded-xl w-full h-150 object-cover' src={domains} alt="" />
                     <div className='absolute top-8/9 px-6 w-full space-y-2'>
-                        <p className='font-semibold text-3xl tracking-wider text-[#0a0a0a]'>Domains</p>
-                        <p className='text-base tracking-wider'>Get started with the perfect domain, which comes with free domain privacy protection forever.</p>
+                        <p className='font-bold text-3xl tracking-wider text-[#0a0a0a]'>Domains</p>
+                        <p className='text-base tracking-wider leading-relaxed'>Get started with the perfect domain, which comes with free domain privacy protection forever.</p>
                         <button className='bg-[#0a0a0a] text-white text-base px-6 py-3 rounded-lg cursor-pointer hover:scale-101 hover:font-[550] transition-all duration-300 ease-in-out'>Search Domains</button>
                     </div>
                 </div>
@@ -23,8 +23,8 @@ function ProductGrid() {
                     <img className='rounded-xl w-full h-150 object-cover' src={craft} alt="" />
                     <div className='absolute top-5/6 px-6 w-full space-y-2'>
                         <p className='bg-sky-300 font-medium w-26 px-1 rounded-sm text-sm text-nowrap'>FREE DOMAIN</p>
-                        <p className='font-semibold text-3xl tracking-wider text-[#0a0a0a]'>Website Builder</p>
-                        <p className='text-base tracking-wider'>Free domain with annual plans. Save time and money and get your site built quickly.</p>
+                        <p className='font-bold text-3xl tracking-wider text-[#0a0a0a]'>Website Builder</p>
+                        <p className='text-base tracking-wider leading-relaxed'>Free domain with annual plans. Save time and money and get your site built quickly.</p>
                         <button className='bg-[#0a0a0a] text-white text-base px-6 py-3 rounded-lg cursor-pointer hover:scale-101 hover:font-[550] transition-all duration-300 ease-in-out'>Create Your site</button>
                     </div>
                 </div>

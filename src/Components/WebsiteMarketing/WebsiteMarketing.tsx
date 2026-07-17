@@ -7,7 +7,7 @@ function WebsiteMarketing() {
     const [activeIndex, setActiveIndex] = useState(0)
     return (
         <>
-            <div className="w-10/12 mx-auto my-25">
+            <div className="w-10/12 mx-auto mt-25">
                 <h1 className="text-center font-bold text-5xl">Grow your brand with Websites + Marketing.</h1>
                 <img className="mt-15 rounded-2xl" src={marketingInfo[activeIndex].image} alt="" />
 
