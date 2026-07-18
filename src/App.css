@@ -4,6 +4,16 @@ body {
   overflow-y: auto;
 }
 
+::selection {
+  background: #A6FFF8;
+  color: black;
+}
+
+::-moz-selection {
+  background: #A6FFF8;
+  color: black;
+}
+
 @font-face {
   font-family: "GD Sherpa Regular";
   src: url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.eot");
