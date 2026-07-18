@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import logo from '../../assets/GoDaddy-White-Logo.png'
 import mobileLogo from '../../assets/GoDaddy-White-Icon.png'
 import MegaMenu from "../MegaMenu/MegaMenu"
@@ -24,9 +24,17 @@ function Header() {
         setIsMenuOpen(false);
     };
 
+    useEffect(() => {
+        document.body.style.overflow = activeMenu ? "hidden" : "auto";
+
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [activeMenu]);
+
     return (
         <>
-            <div>
+            <div className="z-50">
                 <div className="bg-[#0c0c0cde] text-white flex items-center justify-between gap-5 py-3 px-5 lg:px-15">
 
                     <div className="flex items-center gap-2 lg:gap-5">
@@ -144,6 +152,13 @@ function Header() {
                         </svg>
                     </div>
                 </div>
+
+                {activeMenu && (
+                    <div
+                        className="fixed top-18 bottom-0 left-0 right-0 z-40 backdrop-blur-[2px] transition-all duration-300"
+                        onClick={() => setActiveMenu(null)}
+                    />
+                )}
 
                 <MegaMenu activeMenu={activeMenu} />
                 <MobileMenu

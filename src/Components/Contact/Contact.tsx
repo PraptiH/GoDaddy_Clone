@@ -3,7 +3,7 @@ import message from "../../assets/chat-bubble.svg";
 
 function Contact() {
     return (
-        <button className="contact">
+        <button className="contact z-50">
             <span className="border-layer">
                 <span className="shine"></span>
             </span>
