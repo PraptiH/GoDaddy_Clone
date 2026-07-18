@@ -10,7 +10,7 @@ function MenuButton({ name, activeMenu, clickMenu }: Props) {
         <div onClick={()=>{clickMenu(name)}}
         className={`flex items-center cursor-pointer p-2 rounded-lg
             text-[15px] hover:bg-[#454545b4]
-            ${isActive? "bg-white text-black" : ""}`}
+            ${isActive? "bg-white text-black hover:bg-white" : ""}`}
         >
             <p>{name}</p>
             <svg
