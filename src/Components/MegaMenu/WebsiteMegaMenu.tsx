@@ -7,11 +7,11 @@ type Mobile = {
 function WebsiteMegaMenu({ mobile }: Mobile) {
     return (
         <>
-            <div className={mobile ? "flex flex-col gap-4" : "grid grid-cols-4 px-16 my-10"}>
+            <div className={mobile ? "grid grid-cols-1 gap-5" : "grid grid-cols-4 px-16 my-10"}>
                 <div>
-                    <h5 className="text-xs font-semibold">DOMAINBD WEBSITE BUILDER</h5>
-                    <div className="flex flex-col gap-10 mt-5">
-                        <div className="flex items-start gap-2 cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                    <h5 className="text-xs font-semibold">GODADDY WEBSITE BUILDER</h5>
+                    <div className="flex flex-col gap-1 lg:gap-10 mt-5">
+                        <div className="flex items-start gap-2 cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-10 rotate-y-180">
@@ -22,7 +22,7 @@ function WebsiteMegaMenu({ mobile }: Mobile) {
                                 <p className="text-xs">Create free site with built-in marketing tools.</p>
                             </div>
                         </div>
-                        <div className="flex items-start gap-2 cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                        <div className="flex items-start gap-2 cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-12">
@@ -33,7 +33,7 @@ function WebsiteMegaMenu({ mobile }: Mobile) {
                                 <p className="text-xs">Your conversational business companion that build customized sites and web apps in minutes.</p>
                             </div>
                         </div>
-                        <div className="flex items-start gap-2 cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                        <div className="flex items-start gap-2 cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-12">
@@ -50,8 +50,8 @@ function WebsiteMegaMenu({ mobile }: Mobile) {
 
                 <div>
                     <h5 className="text-xs font-semibold">AI BUILDER</h5>
-                    <div className="flex flex-col gap-10 mt-5">
-                        <div className="flex items-start gap-2 cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                    <div className="flex flex-col mt-5">
+                        <div className="flex items-start gap-2 cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-12">
@@ -69,8 +69,8 @@ function WebsiteMegaMenu({ mobile }: Mobile) {
 
                 <div>
                     <h5 className="text-xs font-semibold">HIRE AN EXPERT</h5>
-                    <div className="flex flex-col gap-10 mt-5">
-                        <div className="flex items-start gap-2 cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                    <div className="flex flex-col mt-5">
+                        <div className="flex items-start gap-2 cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-10">

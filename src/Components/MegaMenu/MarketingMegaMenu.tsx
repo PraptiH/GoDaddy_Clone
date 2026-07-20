@@ -5,11 +5,11 @@ type Mobile = {
 function MarketingMegaMenu({mobile}:Mobile) {
     return (
         <>
-            <div className={mobile? "flex flex-col gap-4": "grid grid-cols-3 px-18 my-10"}>
+            <div className={mobile? "grid grid-cols-1 gap-10": "grid grid-cols-3 px-18 my-10"}>
                 <div>
                     <h5 className="text-xs font-semibold">MARKETING TOOLS</h5>
-                    <div className="flex flex-col gap-5 mt-5">
-                        <div className="flex items-center gap-2  cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                    <div className="flex flex-col gap-0 lg:gap-5 mt-5">
+                        <div className="flex items-center gap-2  cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-10">
@@ -18,7 +18,7 @@ function MarketingMegaMenu({mobile}:Mobile) {
 
                             <p className="text-base font-medium">Digital Marketing</p>
                         </div>
-                        <div className="flex items-center gap-2  cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                        <div className="flex items-center gap-2  cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-10">
@@ -27,7 +27,7 @@ function MarketingMegaMenu({mobile}:Mobile) {
 
                             <p className="text-base font-medium">Logo Maker</p>
                         </div>
-                        <div className="flex items-center gap-2  cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                        <div className="flex items-center gap-2  cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24" 
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-10">
@@ -42,8 +42,8 @@ function MarketingMegaMenu({mobile}:Mobile) {
 
                 <div>
                     <h5 className="text-xs font-semibold">TOOLS FOR AGENCIES</h5>
-                    <div className="flex flex-col gap-5 mt-5">
-                        <div className="flex items-start gap-2  cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                    <div className="flex flex-col gap-0 lg:gap-5 mt-5">
+                        <div className="flex items-start gap-2  cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-10">

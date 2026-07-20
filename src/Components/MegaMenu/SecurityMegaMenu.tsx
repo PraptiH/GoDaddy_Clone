@@ -5,11 +5,11 @@ type Mobile = {
 function SecurityMegaMenu({ mobile }: Mobile) {
     return (
         <>
-            <div className={mobile ? "flex flex-col gap-4" : "grid grid-cols-3 pl-18 my-10"}>
+            <div className={mobile ? "grid grid-cols-1 gap-10" : "grid grid-cols-3 pl-18 my-10"}>
                 <div>
                     <h5 className="text-xs font-semibold">WEB SECURITY</h5>
-                    <div className="flex flex-col gap-8 mt-5">
-                        <div className="flex items-start gap-2 cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                    <div className="flex flex-col gap-1 lg:gap-5 mt-5">
+                        <div className="flex items-start gap-2 cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-10 h-10">
@@ -20,7 +20,7 @@ function SecurityMegaMenu({ mobile }: Mobile) {
                                 <p className="text-xs">Show visitors your siteis encrypted and trustworthy.</p>
                             </div>
                         </div>
-                        <div className="flex items-start gap-2 cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
+                        <div className="flex items-start gap-2 cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl mx-2">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 24 24"
                                 className="bg-[#d8efef] p-2.5 rounded-xl w-10 h-10">
@@ -31,8 +31,8 @@ function SecurityMegaMenu({ mobile }: Mobile) {
                                 <p className="text-xs">Comprehensive protection to help defend your site from threats.</p>
                             </div>
                         </div>
-                        <div className="flex items-center gap-2 cursor-pointer hover:bg-[#F5F5F5] p-1.5 rounded-xl group mx-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="bg-[#F5F5F5] p-3 rounded-xl w-10 h-10 group-hover:bg-white" viewBox="0 0 512 404.39">
+                        <div className="group flex items-center gap-2 cursor-pointer hover:bg-white lg:hover:bg-[#F5F5F5] p-1.5 rounded-xl group mx-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="bg-white lg:bg-[#F5F5F5] p-3 rounded-xl w-10 h-10 group-hover:bg-[#F5F5F5] lg:group-hover:bg-white" viewBox="0 0 512 404.39">
                                 <path fill-rule="nonzero" d="M438.95 219.45 0 219.99v-34.98l443.3-.55L269.8 25.79 293.39 0 512 199.92 288.88 404.39l-23.59-25.8z" />
                                 </svg>
                             <div className="space-y-1">
