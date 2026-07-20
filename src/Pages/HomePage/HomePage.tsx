@@ -19,15 +19,15 @@ function HomePage() {
 
                 <FeaturedProducts />
 
-                <WebsiteMarketing />
+                {/* <WebsiteMarketing /> */}
 
                 <TemplateSection />
 
                 <AiroSection />
 
-                <WhyWork />
+                {/* <WhyWork /> */}
 
-                <Footer />
+                {/* <Footer /> */}
 
                 <Contact />
 
