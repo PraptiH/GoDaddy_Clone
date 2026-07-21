@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 body {
   overflow-x: hidden;
   overflow-y: auto;
@@ -122,4 +123,13 @@ body {
     offset-distance: 100%;
   }
 
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
