@@ -18,7 +18,7 @@ function AiroSection() {
                     <div className="lg:bg-white rounded-3xl p-6 lg:p-10 flex flex-col justify-between
                             lg:absolute lg:right-8 lg:top-1/7 lg:w-[50%] lg:h-[82%]">
 
-                        <h2 className="text-3xl lg:text-2xl font-bold leading-relaxed">
+                        <h2 className="text-lg lg:text-2xl md:text-xl font-bold">
                             “It's my job to make you believe I can do anything. But when it came to building my website, GoDaddy Airo™ stepped in and turned my vision into reality.”
                         </h2>
 

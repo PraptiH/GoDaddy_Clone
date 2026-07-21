@@ -29,7 +29,7 @@ function DisclaimerSection() {
 
     return (
         <>
-            <div className="m-12 space-y-5">
+            <div className="mx-5 my-12 lg:m-12 space-y-5">
                 <p className="font-semibold underline cursor-pointer">**, *** Disclaimers</p>
                 <p className="text-base">Third-party logos and marks are registered trademarks of their respective owners. All rights reserved.</p>
             </div>
