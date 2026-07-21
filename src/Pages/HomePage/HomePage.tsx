@@ -1,7 +1,7 @@
 import AiroSection from "../../Components/AiroSection/AiroSection"
 import Contact from "../../Components/Contact/Contact"
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts"
-// import Footer from "../../Components/Footer/Footer"
+import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection.tsx/HeroSection"
 import TemplateSection from "../../Components/TemplateSection/TemplateSection"
@@ -27,7 +27,7 @@ function HomePage() {
 
                 {/* <WhyWork /> */}
 
-                {/* <Footer /> */}
+                <Footer />
 
                 <Contact />
 
