@@ -6,7 +6,7 @@ import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection.tsx/HeroSection"
 import TemplateSection from "../../Components/TemplateSection/TemplateSection"
 // import WebsiteMarketing from "../../Components/WebsiteMarketing/WebsiteMarketing"
-// import WhyWork from "../../Components/WhyWork/WhyWork"
+import WhyWork from "../../Components/WhyWork/WhyWork"
 
 
 function HomePage() {
@@ -25,7 +25,7 @@ function HomePage() {
 
                 <AiroSection />
 
-                {/* <WhyWork /> */}
+                <WhyWork />
 
                 <Footer />
 

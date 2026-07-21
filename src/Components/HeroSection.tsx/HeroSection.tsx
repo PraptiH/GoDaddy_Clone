@@ -37,7 +37,7 @@ function HeroSection() {
                         </button>
                     </div>
 
-                    <div className='hidden lg:flex items-center hover:border hover:border-gray-300 rounded-xl cursor-pointer p-4 gap-5 group'>
+                    <div className='hidden lg:flex items-center border border-transparent hover:border hover:border-gray-300 rounded-xl cursor-pointer p-4 gap-5 group'>
                         <img src={domainLogo} alt="" />
                         <div>
                             <p className='font-semibold group-hover:text-[#09757A]'>$1.99/1st yr.</p>
