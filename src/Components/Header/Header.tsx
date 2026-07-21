@@ -41,7 +41,7 @@ function Header() {
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                             fill="currentColor" viewBox="0 0 24 24"
-                            className="block lg:hidden cursor-pointer"
+                            className="block lg:hidden md:hidden cursor-pointer"
                             onClick={handleHamburger}>
                             <path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path>
                         </svg>
@@ -51,7 +51,7 @@ function Header() {
                             <img className="block md:hidden lg:hidden w-8" src={mobileLogo} alt="" />
                         </div>
 
-                        <div className="hidden lg:flex items-center gap-4 font-medium text-base">
+                        <div className="hidden lg:flex items-center font-medium text-base">
 
                             <div>
                                 <MenuButton
@@ -97,7 +97,7 @@ function Header() {
                                 />
                             </div>
 
-                            <div className="hover:bg-[#454545b4] p-2 rounded-lg text-[15px]">
+                            <div className="hover:bg-[#454545b4] p-2 rounded-lg text-[15px] text-nowrap">
                                 <NavLink to='/aiBuilder'>Ario AI Builder</NavLink>
                             </div>
 
@@ -107,11 +107,11 @@ function Header() {
                         </div>
                     </div>
 
-                    <div className="hidden lg:flex items-center gap-3 font-sans text-[15px]">
+                    <div className="hidden lg:flex md:flex items-center gap-3 font-sans text-[15px]">
                         <NavLink className="hover:bg-[#454545b4] p-2 rounded-xl" to="/deals">Deals</NavLink>
-                        <NavLink className="hover:bg-[#454545b4] p-2 rounded-xl" to="/contact">Contact Us</NavLink>
+                        <NavLink className="hover:bg-[#454545b4] p-2 rounded-xl text-nowrap" to="/contact">Contact Us</NavLink>
                         <NavLink className="hover:bg-[#454545b4] p-2 rounded-xl" to="/help">Help</NavLink>
-                        <NavLink className="hover:bg-[#454545b4] p-1 rounded-xl flex items-center" to="/signIn">Sign In
+                        <NavLink className="hover:bg-[#454545b4] p-1 rounded-xl text-nowrap flex items-center" to="/signIn">Sign In
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="36"
                                 fill="currentColor" viewBox="0 0 24 24" >
@@ -124,7 +124,7 @@ function Header() {
                         </svg>
                     </div>
 
-                    <div className="flex items-center gap-3 lg:hidden">
+                    <div className="flex items-center gap-3 lg:hidden md:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" viewBox="0 0 24 24"
                             transform="scale(-1,1) ">
